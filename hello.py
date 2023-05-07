@@ -1,10 +1,6 @@
-# Initializes name while requesting input, removing excess spaces, and title-casing name
-name = input("What's your name? ").strip().title()
+def hello(to="world"):
+    print("hello,", to)
 
-# Splits name into first and last name
-first, last = name.split(" ")
-
-"""
-Greeting the user rather politely
-"""
-print(f"Hello, {first}.")
+hello()
+name = input("What's your name? ")
+hello(name)
